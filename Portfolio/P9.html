@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: whitesmoke;
+        }
+
+        nav {
+            background: rgb(61, 56, 56);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px ;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .cards{
+            background: white;
+            padding:30px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+
+        .cards button{
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+    <nav>
+        <h2>My Website</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Our Services</h2>
+    <div class="container">
+        <div class="cards">
+            <h3>Web Design</h3>
+            <p>Creative website designs.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="cards">
+            <h3>Development</h3>
+            <p>Bulid modern website.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="cards">
+            <h3>Marketing</h3>
+            <p>Grow your business</p>
+            <button>Explore</button>
+        </div>
+    </div>
+</body>
+</html>
