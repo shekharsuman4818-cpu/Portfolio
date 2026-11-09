@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.6;
+        }
+
+        header p{
+            color: #666;
+        }
+
+        nav{
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 10px ;
+            letter-spacing: 1px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 20px;
+        }
+
+        .news{
+            background: white;
+            padding: 10px;
+            margin: 15px;
+           height: 180px;
+           line-height: 1.6;
+          border-radius: 15px;
+        }
+
+        .news h3{
+            color: #222;
+            margin-bottom: 10px;
+        } 
+        .news p{
+            color: #666;
+         }
+
+         footer{
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;    
+         }
+
+         @media(max-width:600px) {
+               
+            .container{
+                grid-template-columns: 1fr;
+            }
+         }
+    </style>
+    <header>
+      <h1>THE DAILY NEWS</h1>
+      <p>Your Daily Dose of information</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">World</a>
+      <a href="#">Sports</a>
+      <a href="#">Technology</a>
+      <a href="#">About</a>
+    </nav>
+
+    <div class="container">
+      <div class="news">
+        <h3>World news</h3>
+        <p>Latest updates and important events happening around the world.</p>
+      </div>
+
+      <div class="news">
+        <h3>Technology</h3>
+        <p>Discover new technologies and innvotions changing our future.</p>
+      </div>
+
+      <div class="news">
+        <h3>Sports</h3>
+        <p>Get the latest sports news, match updates and highlights.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>2026 The Daily News.All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
