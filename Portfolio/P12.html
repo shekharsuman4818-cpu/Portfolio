@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: whitesmoke;
+        }
+
+        header{
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.4;
+            border-radius: 5px;
+        }
+
+        header p{
+            color: #666;
+        }
+        .project-grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .project{
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 3px 10px #00000015;
+        }
+
+        .project h3{
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project p{
+            color: #666;
+        }
+
+        .project button{
+            background: rgb(102, 102, 161);
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .project:first-child{
+            grid-column: span 2;
+        }
+        .project:last-child{
+            grid-column: span 2;
+        }
+
+        @media (max-width:600px) {
+            .project-grid{
+                grid-template-columns: 1fr;
+            }
+            .project:first-child{
+                grid-column: span 1;
+            }
+
+            .project:last-child{
+                grid-column: span 1;
+            }
+        }
+    </style>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my creative projects</p>
+    </header>
+
+    <div class="project-grid">
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Responsive Website Design</p>
+            <button>View Project</button>
+        </div>
+
+         <div class="project">
+            <h3>Project 2</h3>
+            <p>Landing Page Design</p>
+            <button>View Project</button>
+        </div>
+
+         <div class="project">
+            <h3>Project 3</h3>
+            <p>Creative Cards Layout</p>
+            <button>View Project</button>
+        </div>
+
+         <div class="project">
+            <h3>Project 4</h3>
+            <p>Newspaper Layout</p>
+            <button>View Project</button>
+        </div>
+
+         <div class="project">
+            <h3>Project 5</h3>
+            <p>Protfolio Website</p>
+            <button>View Project</button>
+        </div>
+    </div>
+</body>
+</html>
