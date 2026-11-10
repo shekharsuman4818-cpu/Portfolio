@@ -6,6 +6,51 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Design Tokens</title>
+
+    <style>
+        :root {
+            --main-color: blue;
+            --text-color: black;
+            --background: lightgray;
+            --font-size: 18px;
+        }
+
+        body {
+            background: (--background);
+            color: var(--text-color);
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--main-color);
+            font-size: 32px;
+        }
+
+        p {
+            font-size: var(--font-size);
+        }
+
+        button {
+            background: var(--main-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+
+<body>
+
+    <h1>My Website</h1>
+
+    <p>Welcome to my website.</p>
+
+    <p>This is my simple design system.</p>
+
+    <button>Click Me</button>
 </body>
 </html>
